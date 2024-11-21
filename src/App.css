@@ -14,6 +14,10 @@ body{
   background-image: url('./components/images/leaf-bg.png');
 } */
 
+
+/* .backgroundImg{
+  height: 800px;
+} */
 .navbar{
   display: flex;
   justify-content: space-between;
@@ -63,14 +67,17 @@ a{
   color: #F26000;
 }
 
+
+/* FOOTER CSS */
 .footer{
+  height: 200px;
   display: flex;
   justify-content: space-between;
-  padding: 10px;
+  /* padding: 10px; */
   background-color: rgb(19, 17, 1);
   margin-top: 200px;
   position: sticky;
-  bottom: 0;
+  /* bottom: 0; */
 }
 
 .footer h1{
@@ -96,11 +103,11 @@ a{
   text-decoration: none;
 }
 
-.backgroundImg{
+/* .backgroundImg{
   background-image: url('./components/img/backdrop.jpg');
   background-repeat: no-repeat;
   background-size: cover;
-}
+} */
 
 /* .aboutImg{
   background-image: url('./components/img/backdrop2.jpg');
@@ -109,19 +116,40 @@ a{
   
 } */
 
-.homeBanner{
-  height: 60vh;
+
+
+
+/* HOMEPAGE CSS */
+.homeBanner .section1{
+  width: 100%;
+  height: 850px;
+  background-image: url('./components/img/backdrop.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* height: 100vh; */
   align-items: center;
   justify-content: center;
   align-items: center;
   display: flex;
   flex-direction: column;
+  /* background-color: #333; */
+}
 
+.homeBanner {
+  height: auto;
+  align-items: center;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  /* background-color: rgb(19, 17, 1); */
 }
 
 .homeBanner h1{
+  position: relative;
+  bottom: 100px;
   text-align: center;
-  margin-top: 150px;
+  /* margin-top: 150px; */
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   font-weight: 700;
   font-size: 50px;
@@ -129,6 +157,8 @@ a{
 }
 
 .homeBanner p{
+  position: relative;
+  bottom: 80px;
   text-align: center;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   font-size: 20px;
@@ -139,15 +169,17 @@ a{
 
 .homeBanner button{
   text-decoration: none;
-  color: white;
+  color: rgb(8, 8, 8);
   padding: 10px;
   width: 100%;
   /* justify-content: center; */
   border: none;
   border-radius: 5px;
-  margin-top: 80px;
-  margin-right: 200px;
-  background-color: #FF9800;
+  /* margin-top: 80px;
+  margin-right: 200px; */
+  background: transparent;
+  border: 1px solid #FF9800;
+  /* background-color: #FF9800; */
   cursor: pointer;
   font-size: 20px;
   font-weight: 300;
@@ -155,16 +187,16 @@ a{
 }
 
 .homeBanner button:hover{
-  background-color: rgb(192, 175, 143);
+  background-color: #FF9800;
 }
 
-.homeBanner .bannerImg{
+/* .homeBanner .bannerImg{
   width: 90%;
-  /* background-color: black; */
+  background-color: black;
   height: 100%;
   margin-top: 80px;
   display: flex;
-}
+} */
 
 /* .homeBanner .bannerImg .card{
   width: 10%;
@@ -179,21 +211,215 @@ a{
   margin: 10px;
 } */
 
-.homeBanner .bannerImg .img1{
+/* .homeBanner .bannerImg .img1{
   width: 350px;
+} */
+
+/* .homeBanner .bannerImg .img2{
+  width: 350px;
+} */
+
+/* .homeBanner .bannerImg .img3{
+  width: 350px;
+} */
+
+/* .homeBanner .bannerImg .img4{
+  width: 350px;
+} */
+
+.homeBanner .section2{
+  width: 100%;
+  height: 700px;
+  display: block;
+  /* background-color: #afadad; */
 }
 
-.homeBanner .bannerImg .img2{
-  width: 350px;
+.homeBanner .section2 .col1{
+  width: 80%;
+  height: 80px;
+  position: relative;
+  left: 160px;
+  /* background-color: #f5f5f5; */
+  display: flex;
+  
+  /* flex-direction: column;
+  align-items: center;
+  justify-content: center; */
 }
 
-.homeBanner .bannerImg .img3{
-  width: 350px;
+.homeBanner .section2 .col1 h1{
+  color: #333;
+  font-size: 30px;
+  font-weight: 700;
+  position: relative;
+  top: 60px;
+  transform: translateY(-50%);
 }
 
-.homeBanner .bannerImg .img4{
-  width: 350px;
+.homeBanner .section2 .col2{
+  width: 80%;
+  height: 500px;
+  position: relative;
+  top: 0px;
+  left: 160px;
+  gap: 18px;
+  /* background-color: #bfddab; */
+  display: flex;
+  /* padding: 5px; */
+  
+  /* flex-direction: column;
+  align-items: center;
+  justify-content: center; */
 }
+
+.homeBanner .section2 .col2 .tab1{
+  width: 40%;
+  height: 230px;
+  position: relative;
+  top: 0px;
+  background-color: #6276eb;
+  display: block;
+  padding: 10px;
+  border-radius: 10px;
+
+  /* flex-direction: column;
+  align-items: center;
+  justify-content: center; */
+}
+
+.homeBanner .section2 .col2 .tab1 h1{
+  color: white;
+  font-size: 18px;
+  font-weight: 700;
+  text-align: left;
+  position: relative;
+  top: 10px;
+  /* margin-bottom: 50px; */
+}
+
+.homeBanner .section2 .col2 .tab1 p{
+  color: white;
+  font-size: 16px;
+  font-weight: 400;
+  text-align: left;
+  position: relative;
+  top: 40px;
+
+  /* margin-bottom: 50px; */
+}
+
+.homeBanner .section2 .col2 .tab2{
+  width: 40%;
+  height: 230px;
+  position: relative;
+  top: 0px;
+  background-color: #daa20b;
+  display: block;
+  padding: 10px;
+  border-radius: 10px;
+
+  /* flex-direction: column;
+  align-items: center;
+  justify-content: center; */
+}
+
+.homeBanner .section2 .col2 .tab2 h1{
+  color: white;
+  font-size: 18px;
+  font-weight: 700;
+  text-align: left;
+  position: relative;
+  top: 10px;
+  /* margin-bottom: 50px; */
+}
+
+.homeBanner .section2 .col2 .tab2 p{
+  color: white;
+  font-size: 16px;
+  font-weight: 400;
+  text-align: left;
+  position: relative;
+  top: 20px;
+  /* margin-bottom: 50px; */
+}
+
+.homeBanner .section2 .col2 .tab3{
+  width: 40%;
+  height: 230px;
+  position: relative;
+  top: 0px;
+  background-color: #ec4258;
+  display: block;
+  padding: 10px;
+  border-radius: 10px;
+
+  /* flex-direction: column;
+  align-items: center;
+  justify-content: center; */
+}
+
+.homeBanner .section2 .col2 .tab3 h1{
+  color: white;
+  font-size: 18px;
+  font-weight: 700;
+  text-align: left;
+  position: relative;
+  top: 10px;
+  /* margin-bottom: 50px; */
+}
+
+.homeBanner .section2 .col2 .tab3 p{
+  color: white;
+  font-size: 16px;
+  font-weight: 400;
+  text-align: left;
+  position: relative;
+  top: 20px;
+  /* margin-bottom: 50px; */
+}
+
+.homeBanner .section2 .col2 .tab4{
+  width: 40%;
+  height: 230px;
+  position: relative;
+  top: 0px;
+  background-color: #1b1b19;
+  display: block;
+  padding: 10px;
+  border-radius: 10px;
+
+  /* flex-direction: column;
+  align-items: center;
+  justify-content: center; */
+}
+
+.homeBanner .section2 .col2 .tab4 h1{
+  color: white;
+  font-size: 18px;
+  font-weight: 700;
+  text-align: left;
+  position: relative;
+  top: 10px;
+  /* margin-bottom: 50px; */
+}
+
+.homeBanner .section2 .col2 .tab4 p{
+  color: white;
+  font-size: 16px;
+  font-weight: 400;
+  text-align: left;
+  position: relative;
+  top: 40px;
+  /* margin-bottom: 50px; */
+}
+
+
+
+
+
+
+
+
 
 .menuBanner{
   width: 100%;
