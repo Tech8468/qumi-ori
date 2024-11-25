@@ -9,7 +9,7 @@ function Home() {
         <p> ...quality product, best value...</p>
 
         <Link to="/about">
-          <button className="menuBtn">Enter to take a tour</button>
+          <button className="menuBtn">Learn more</button>
         </Link>
       </div>
       <div className="section2">
