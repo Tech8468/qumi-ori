@@ -14,7 +14,7 @@ function Home() {
       </div>
       <div className="section2">
         <div className="col1">
-          <h1>Why choose us?</h1>
+          <h2>Why choose us?</h2>
         </div>
         <div className="col2">
           <div className="tab1">
