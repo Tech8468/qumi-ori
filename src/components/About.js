@@ -39,9 +39,9 @@ function About() {
                         <p>Quality, Efficient, Timely and Competitive service delivery are reasons you will rather patronise Qumi-Ori Resources.</p>
                     </div>
                 </div>
-                <div className="col2">
+                {/* <div className="col2">
                     <div><img src={Pix1} alt="" /></div>
-                </div>
+                </div> */}
             </div>
             {/* <div>
                 <Link to="/register">Register to Sign-up</Link>
