@@ -8,27 +8,44 @@
 
 /* FOOTER CSS */
 .footer{
+  width: 100%;
     height: 250px;
-    display: block;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     /* justify-content: space-between; */
     /* padding: 10px; */
-    background-color: rgb(19, 17, 1);
-    margin-top: 200px;
+    background-color: rgb(250, 245, 245);
+    /* margin-top: 200px; */
     position: sticky;
     /* bottom: 0; */
 }
 
 .footer-board{
+    width: 100%;
+    height: 200px;
     display: flex;
-    justify-content: space-between;
-    padding: 10px;
+    flex-direction: row;
+    align-items: center;
+    justify-items: center;
+    justify-content: space-around;
+    /* background-color: #fff; */
+    padding: 0px;
+}
+
+.footer-board img{
+    width: 200px;
+    height: 60px;
+    position: relative;
+    top: -30px;
 }
 
 .footer-board h1{
     font-size: 24px;
-    color: white;
+    color: #F26000;
     text-align: center;
-    font-weight: bold;
+    font-weight: 300;
     letter-spacing: 1px;
     font-family: 'Montserrat', sans-serif;
 
@@ -43,20 +60,20 @@
     display: block;
     justify-content: space-between;
     list-style: none;
-    color: white;
+    color: #F26000;
     /* padding: 10px; */
     /* gap: 18px; */
 }
 
 .footer-board ul li{
     display: block;
-    color: white;
+    color: #F26000;
     position: relative;
     padding: 10px;
     transition: background-color 0.3s ease;
  }
   .footer-board ul li a{
-    color: white;
+    color: #F26000;
     text-decoration: none;
     transition: color 0.3s ease;
     font-size: 18px;
@@ -72,10 +89,12 @@
     /* justify-content: center; */
     align-items: left;
     gap: 18px;
+    position: relative;
+    top: 25px;
     padding: 10px;
   }
   .footer-care h2{
-    color: white;
+    color: #F26000;
     font-size: 18px;
     font-weight: bold;
     letter-spacing: 1px;
@@ -84,15 +103,65 @@
   }
 
   .footer-care p{
-    color: white;
+    color: #F26000;
     font-size: 14px;
     font-weight: normal;
     letter-spacing: 1px;
     font-family: 'Montserrat', sans-serif;
   }
+  .footer-board .footer-care .footerSocial {
+    width: 200px;
+    /* height: 10px; */
+  display: flex;
+  position: relative;
+  top: 20px;
+  gap: 20px;
+  /* padding: 10px; */
+}
+.footer-board .footer-care .footerSocial .instagram,
+.facebook,
+.linkedin,
+.whatsApp {
+  color: #F26000;
+  font-size: 30px;
+  font-weight: bold;
+  /* letter-spacing: 1px; */
+  /* font-family: 'Montserrat', sans-serif; */
+}
+
+.footer-board .footer-care .footerSocial .instagram:hover {
+  color: black;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.footer-board .footer-care .footerSocial .facebook:hover {
+  color: black;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.footer-board .footer-care .footerSocial .linkedin:hover {
+  color: black;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.footer-board .footer-care .footerSocial .whatsApp:hover {
+  color: black;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
 
   .copyright{
-    color: white;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #333;
+    color: #F26000;
     font-size: 12px;
     font-weight: normal;
     letter-spacing: 1px;
@@ -102,6 +171,14 @@
     position: relative;
     top: 50px;
   }
+
+  .cpy {
+  color: #F26000;
+  font-size: 14px;
+  font-weight: bold;
+  position: relative;
+  top: 2px;
+}
   
   
 

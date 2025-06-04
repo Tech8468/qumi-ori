@@ -4,7 +4,7 @@
   box-sizing: none;
 }
 
-.homeBanner {
+.banner {
   height: auto;
   align-items: center;
   justify-content: center;
@@ -12,9 +12,9 @@
   flex-direction: column;
 }
 
-/* SECTION1 CSS BEGINS */
+/* section CSS BEGINS */
 
-.homeBanner .section1 {
+.banner .section {
   width: 100%;
   height: 900px;
   background-image: url("../components/img/backdrop.jpg");
@@ -27,19 +27,22 @@
   gap: 10px;
 }
 
-.homeBanner .section1 h1 {
-  /* position: relative; */
-  bottom: 0px;
+.banner .section h1 {
   text-align: center;
-  /* margin-bottom: 150px; */
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  /* font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif; */
   font-weight: 700;
-  font-size: 50px;
-  color: white;
-  /* margin-top: -90px; */
+  font-size: 80px;
+  color: rgb(212, 33, 33);
 }
 
-.homeBanner .section1 p {
+.banner .welcome h1{
+  color: #ff9800;
+  font-size: 20px;
+  font-weight: 700;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.banner .section p {
   bottom: 0;
 
   text-align: center;
@@ -49,7 +52,7 @@
   color: white;
 }
 
-.homeBanner button {
+.banner button {
   text-decoration: none;
   color: #ff9800;
   padding: 20px;
@@ -71,28 +74,30 @@
   transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
 }
 
-.homeBanner button:hover {
+.banner button:hover {
   background-color: #ff9800;
   color: white;
 }
 
-/* SECTION1 CSS ENDS */
+/* section CSS ENDS */
 
 /* SECTION2 CSSBEGINS */
 
-.homeBanner .section2 {
+.banner .section2 {
   width: 90%;
-  height: 400px;
+  height: 500px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  /* background-color: #6276eb; */
 }
 
-.homeBanner .section2 .col1 {
+.banner .section2 .col1 {
   width: 50%;
   height: 250px;
   position: relative;
+  top: -50px;
   left: 0px;
   right: 50px;
   /* background-color: #6276eb; */
@@ -102,9 +107,9 @@
   justify-content: center;
 }
 
-.homeBanner .section2 .col1 h2{
+.banner .section2 .col1 h2{
   color: #333;
-  font-size: 40px;
+  font-size: 80px;
   font-weight: 700;
   text-align: right;
   /* position: relative; */
@@ -113,19 +118,20 @@
   /* transform: translateY(-50%); */
 }
 
-.homeBanner .section2 .col2 {
+.banner .section2 .col2 {
   width: 80%;
-  height: 500px;
-  position: relative;
-  top: 0px;
+  height: 400px;
+  position: absolute;
+  top: 150px;
   left: 0px;
   gap: 10px;
   display: flex;
+  /* background-color: aqua; */
 }
 
-.homeBanner .section2 .col2 .tab1 {
+.banner .section2 .col2 .tab1 {
   width: 20%;
-  height: 245px;
+  height: 250px;
   position: relative;
   top: 0px;
   background-color: #6276eb;
@@ -134,25 +140,38 @@
   border-radius: 10px;
 }
 
-.homeBanner .section2 .col2 .tab1 h1 {
+.banner .section2 .col2 .tab1 .Img-1{
+  width: 50%;
+  height: 130px;
+  position: relative;
+  top: -80px;
+  left: 65px;
+  background-color: white;
+  display: block;
+  padding: 10px;
+  border-radius: 90px;
+  border: 1px solid #FF9800;
+}
+
+.banner .section2 .col2 .tab1 h1 {
   color: white;
-  font-size: 18px;
+  font-size: 15px;
   font-weight: 700;
   text-align: left;
   position: relative;
-  top: 10px;
+  top: -50px;
 }
 
-.homeBanner .section2 .col2 .tab1 p {
+.banner .section2 .col2 .tab1 p {
   color: white;
-  font-size: 16px;
+  font-size: 13px;
   font-weight: 400;
   text-align: left;
   position: relative;
-  top: 40px;
+  top: -40px;
 }
 
-.homeBanner .section2 .col2 .tab2 {
+.banner .section2 .col2 .tab2 {
   width: 20%;
   height: 245px;
   position: relative;
@@ -163,27 +182,40 @@
   border-radius: 10px;
 }
 
-.homeBanner .section2 .col2 .tab2 h1 {
+.banner .section2 .col2 .tab2 .Img-1{
+  width: 50%;
+  height: 130px;
+  position: relative;
+  top: -80px;
+  left: 65px;
+  background-color: white;
+  display: block;
+  padding: 10px;
+  border-radius: 90px;
+  border: 1px solid #FF9800;
+}
+
+.banner .section2 .col2 .tab2 h1 {
   color: white;
-  font-size: 18px;
+  font-size: 15px;
   font-weight: 700;
   text-align: left;
   position: relative;
-  top: 10px;
+  top: -50px;
 }
 
-.homeBanner .section2 .col2 .tab2 p {
+.banner .section2 .col2 .tab2 p {
   color: white;
-  font-size: 16px;
+  font-size: 13px;
   font-weight: 400;
   text-align: left;
   position: relative;
-  top: 20px;
+  top: -40px;
 }
 
-.homeBanner .section2 .col2 .tab3 {
+.banner .section2 .col2 .tab3 {
   width: 20%;
-  height: 245px;
+  height: 2450px;
   position: relative;
   top: 0px;
   background-color: #ec4258;
@@ -192,25 +224,38 @@
   border-radius: 10px;
 }
 
-.homeBanner .section2 .col2 .tab3 h1 {
+.banner .section2 .col2 .tab3 .Img-1{
+  width: 50%;
+  height: 130px;
+  position: relative;
+  top: -80px;
+  left: 65px;
+  background-color: white;
+  display: block;
+  padding: 10px;
+  border-radius: 90px;
+  border: 1px solid #FF9800;
+}
+
+.banner .section2 .col2 .tab3 h1 {
   color: white;
-  font-size: 18px;
+  font-size: 15px;
   font-weight: 700;
   text-align: left;
   position: relative;
-  top: 10px;
+  top: -50px;
 }
 
-.homeBanner .section2 .col2 .tab3 p {
+.banner .section2 .col2 .tab3 p {
   color: white;
-  font-size: 16px;
+  font-size: 13px;
   font-weight: 400;
   text-align: left;
   position: relative;
-  top: 20px;
+  top: -40px;
 }
 
-.homeBanner .section2 .col2 .tab4 {
+.banner .section2 .col2 .tab4 {
   width: 20%;
   height: 245px;
   position: relative;
@@ -221,28 +266,145 @@
   border-radius: 10px;
 }
 
-.homeBanner .section2 .col2 .tab4 h1 {
+.banner .section2 .col2 .tab4 .Img-1{
+  width: 50%;
+  height: 130px;
+  position: relative;
+  top: -80px;
+  left: 65px;
+  background-color: white;
+  display: block;
+  padding: 10px;
+  border-radius: 90px;
+  border: 1px solid #FF9800;
+}
+
+
+.banner .section2 .col2 .tab4 h1 {
   color: white;
-  font-size: 18px;
+  font-size: 15px;
   font-weight: 700;
   text-align: left;
   position: relative;
-  top: 10px;
+  top: -50px;
 }
 
-.homeBanner .section2 .col2 .tab4 p {
+.banner .section2 .col2 .tab4 p {
   color: white;
-  font-size: 16px;
+  font-size: 13px;
   font-weight: 400;
   text-align: left;
   position: relative;
-  top: 40px;
+  top: -40px;
 }
 
-/* SECTION@ CSS ENDS */
+.banner .section3 {
+  width: 100%;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+    background-color: rgb(250, 245, 245);
+  gap: 0px;
+}
+.motion.div{
+width: 100%;
+}
+
+.section4{
+  width: 100%;
+  height: 60vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
+  position: relative;
+  top: 30px;
+  /* background-color: #1b1b19; */
+}
+.section4 .col1{
+  width: 100%;
+  height: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
+  /* background-color: #57d853; */
+}
+.section4 .col1 h1 {
+  text-align: center;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-weight: 700;
+  font-size: 25px;
+  color: #ff9800;
+}
+.section4 .col1 p {
+  text-align: center;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 20px;
+  color: black;
+}
+.section4 .col2{
+  width: 100%;
+  height: 40vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-items: center;
+  position: relative;
+  top: 20px;
+  /* background-color: #1b1b19; */
+  overflow: hidden;
+}
+
+.section4 .col2 div{
+  /* width: 100%; */
+  width: calc(20px * 2);
+  height: 40vh;
+  position: relative;
+  top: 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-items: center;
+  animation: scroll 20s linear infinite;
+  /* grid-template-columns: repeat(3, 1fr) ; */
+  gap: 70px;
+  background-color: white;
+  padding: 10px;
+
+  /* overflow: hidden; */
+}
+
+.section4 .col2 div:hover{
+  animation-play-state: paused;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-100px * 27));
+    /* transform: translateX(-100%); */
+  }
+}
+/* .section4 .col1 {
+  width: 250px;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #6276eb;
+  border-radius: 10px;
+} */
+
+/* SECTION CSS ENDS */
 
 @media only screen and (max-width: 1024px) {
-  .homeBanner .section2 .col1 {
+  .banner .section2 .col1 {
     width: 50%;
     height: 80px;
     /* position: relative; */
@@ -252,7 +414,7 @@
 
   }
 
-  .homeBanner .section2 .col2 {
+  .banner .section2 .col2 {
     width: 100%;
     height: 500px;
     padding: 10px;
@@ -271,7 +433,7 @@
     /* background-color: #1b1b19; */
   }
 
-  .homeBanner .section2 .col2 .tab1 {
+  .banner .section2 .col2 .tab1 {
     width: 50%;
     height: 150px;
     position: relative;
@@ -282,7 +444,7 @@
     border-radius: 10px;
   }
 
-  .homeBanner .section2 .col2 .tab1 h1 {
+  .banner .section2 .col2 .tab1 h1 {
     color: white;
     font-size: 15px;
     font-weight: 700;
@@ -291,7 +453,7 @@
     top: 10px;
   }
 
-  .homeBanner .section2 .col2 .tab1 p {
+  .banner .section2 .col2 .tab1 p {
     color: white;
     font-size: 12px;
     font-weight: 400;
@@ -300,7 +462,7 @@
     top: 40px;
   }
 
-  .homeBanner .section2 .col2 .tab2 {
+  .banner .section2 .col2 .tab2 {
     width: 50%;
     height: 150px;
     position: relative;
@@ -311,7 +473,7 @@
     border-radius: 10px;
   }
 
-  .homeBanner .section2 .col2 .tab2 h1 {
+  .banner .section2 .col2 .tab2 h1 {
     color: white;
     font-size: 15px;
     font-weight: 700;
@@ -320,7 +482,7 @@
     top: 10px;
   }
 
-  .homeBanner .section2 .col2 .tab2 p {
+  .banner .section2 .col2 .tab2 p {
     color: white;
     font-size: 12px;
     font-weight: 400;
@@ -329,7 +491,7 @@
     top: 20px;
   }
 
-  .homeBanner .section2 .col2 .tab3 {
+  .banner .section2 .col2 .tab3 {
     width: 50%;
     height: 150px;
     position: relative;
@@ -340,7 +502,7 @@
     border-radius: 10px;
   }
 
-  .homeBanner .section2 .col2 .tab3 h1 {
+  .banner .section2 .col2 .tab3 h1 {
     color: white;
     font-size: 15px;
     font-weight: 700;
@@ -349,7 +511,7 @@
     top: 10px;
   }
 
-  .homeBanner .section2 .col2 .tab3 p {
+  .banner .section2 .col2 .tab3 p {
     color: white;
     font-size: 12px;
     font-weight: 400;
@@ -358,7 +520,7 @@
     top: 20px;
   }
 
-  .homeBanner .section2 .col2 .tab4 {
+  .banner .section2 .col2 .tab4 {
     width: 50%;
     height: 150px;
     position: relative;
@@ -369,7 +531,7 @@
     border-radius: 10px;
   }
 
-  .homeBanner .section2 .col2 .tab4 h1 {
+  .banner .section2 .col2 .tab4 h1 {
     color: white;
     font-size: 15px;
     font-weight: 700;
@@ -378,7 +540,7 @@
     top: 10px;
   }
 
-  .homeBanner .section2 .col2 .tab4 p {
+  .banner .section2 .col2 .tab4 p {
     color: white;
     font-size: 12px;
     font-weight: 400;
@@ -389,11 +551,11 @@
 }
 
 @media only screen and (min-width: 768px) {
-  .homeBanner{
+  .banner{
     /* height: 800px; */
     border: none;
   }
-  .homeBanner .section1 h1 {
+  .banner .section h1 {
     text-align: center;
     margin-bottom: 190px;
     font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
@@ -403,7 +565,7 @@
     color: white;
   }
 
-  .homeBanner .section1 p {
+  .banner .section p {
     position: relative;
     bottom: 150px;
     text-align: center;
@@ -414,7 +576,7 @@
   }
 
 
-  .homeBanner .section2 .col1 {
+  .banner .section2 .col1 {
     width: 100%;
     height: 60px;
     position: relative;
@@ -423,7 +585,7 @@
     display: flex;
   }
 
-  .homeBanner .section2 .col1 h2 {
+  .banner .section2 .col1 h2 {
     color: #333;
     font-size: 20px;
     font-weight: 700;
@@ -431,12 +593,12 @@
     top: 60px;
   }
 
-  .homeBanner .section2{
+  .banner .section2{
     width: 90%;
     padding: 5px;
   }
 
-  .homeBanner .section2 .col2 {
+  .banner .section2 .col2 {
     width: 100%;
     height: 450px;
     display: flex;
@@ -448,7 +610,7 @@
     left: 0px;
   }
 
-  .homeBanner .section1 {
+  .banner .section {
     width: 100%;
     height: 900px;
     background-color: #6276eb;
@@ -462,10 +624,10 @@
     gap: 10px;
   }
 
-  .homeBanner .section2 .col2 .tab1,
-  .homeBanner .section2 .col2 .tab2,
-  .homeBanner .section2 .col2 .tab3,
-  .homeBanner .section2 .col2 .tab4 {
+  .banner .section2 .col2 .tab1,
+  .banner .section2 .col2 .tab2,
+  .banner .section2 .col2 .tab3,
+  .banner .section2 .col2 .tab4 {
     /* width: 100%; */
     height: 280px;
   }
@@ -473,7 +635,7 @@
 }
 
 @media only screen and (max-width: 425px) {
-  .homeBanner {
+  .banner {
     height: 300vh;
     display: flex;
     flex-direction: column;
@@ -482,21 +644,21 @@
     /* gap: 0px; */
     /* background-color: #daa20b; */
   }
-  .homeBanner .section1 h1 {
+  .banner .section h1 {
     font-size: 20px;
     position: relative;
     top: -100px;
     /* margin-bottom: 120px; */
   }
 
-  .homeBanner .section1 p {
+  .banner .section p {
     font-size: 15px;
     position: relative;
     top: -80px;
     /* bottom: 120px; */
   }
 
-  .homeBanner button {
+  .banner button {
     text-decoration: none;
     color: #ff9800;
     padding: 10px;
@@ -514,12 +676,12 @@
       sans-serif;
   }
 
-  .homeBanner button:hover {
+  .banner button:hover {
     background-color: #ff9800;
     color: white;
   }
 
-  .homeBanner .section2 {
+  .banner .section2 {
     width: 100%;
     height: 180vh;
     display: block;
@@ -529,7 +691,7 @@
     /* background-color: aquamarine; */
   }
 
-  .homeBanner .section2 .col1 {
+  .banner .section2 .col1 {
     width: 100%;
     height: 50px;
     display: flex;
@@ -542,7 +704,7 @@
     display: flex; */
   }
 
-  .homeBanner .section2 .col1 h2 {
+  .banner .section2 .col1 h2 {
     color: #333;
     font-size: 20px;
     font-weight: 700;
@@ -551,7 +713,7 @@
     transform: translateY(-50%);
   }
 
-  .homeBanner .section2 .col2 {
+  .banner .section2 .col2 {
     width: 100%;
     height: 180vh;
     display: grid;
@@ -566,7 +728,7 @@
     /* background-color: #6276eb; */
   }
 
-  .homeBanner .section2 .col2 .tab1 {
+  .banner .section2 .col2 .tab1 {
     width: 100%;
     height: 220px;
     position: relative;
@@ -577,7 +739,7 @@
     border-radius: 10px;
   }
 
-  .homeBanner .section2 .col2 .tab2 {
+  .banner .section2 .col2 .tab2 {
     width: 100%;
     height: 220px;
     position: relative;
@@ -588,7 +750,7 @@
     border-radius: 10px;
   }
 
-  .homeBanner .section2 .col2 .tab3 {
+  .banner .section2 .col2 .tab3 {
     width: 100%;
     height: 220px;
     position: relative;
@@ -599,7 +761,7 @@
     border-radius: 10px;
   }
 
-  .homeBanner .section2 .col2 .tab4 {
+  .banner .section2 .col2 .tab4 {
     width: 100%;
     height: 220px;
     position: relative;
@@ -610,10 +772,10 @@
     border-radius: 10px;
   }
 
-  .homeBanner .section2 .col2 .tab1 h1,
-  .homeBanner .section2 .col2 .tab2 h1,
-  .homeBanner .section2 .col2 .tab3 h1,
-  .homeBanner .section2 .col2 .tab4 h1 {
+  .banner .section2 .col2 .tab1 h1,
+  .banner .section2 .col2 .tab2 h1,
+  .banner .section2 .col2 .tab3 h1,
+  .banner .section2 .col2 .tab4 h1 {
     color: white;
     font-size: 20px;
     font-weight: bold;
@@ -624,10 +786,10 @@
     padding-bottom: 5px; */
   }
 
-  .homeBanner .section2 .col2 .tab1 p,
-  .homeBanner .section2 .col2 .tab2 p,
-  .homeBanner .section2 .col2 .tab3 p,
-  .homeBanner .section2 .col2 .tab4 p {
+  .banner .section2 .col2 .tab1 p,
+  .banner .section2 .col2 .tab2 p,
+  .banner .section2 .col2 .tab3 p,
+  .banner .section2 .col2 .tab4 p {
     color: white;
     font-size: 18px;
     /* font-weight: 400; */

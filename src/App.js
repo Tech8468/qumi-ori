@@ -1,4 +1,4 @@
-import "./App.css";
+// import "./App.css";
 import "./css/Navbar.css";
 import "./css/Home.css";
 import "./css/Product.css";

@@ -1,5 +1,5 @@
 // import {Link} from "react-router-dom";
-import Pix1 from "./img/qumi-logo.png";
+// import Pix1 from "./img/qumi-logo.png";
 // import { useState } from "react";
 // import { useNavigate } from "react-router-dom";
 
@@ -17,13 +17,13 @@ function About() {
                         <h1>
                             What we do
                         </h1>
-                        <h5>
+                        <p>
                             We are a solutions company, providing Supplies, Distribution and Maintanance 
                             solutions to organisation's printing challenges with quality toner 
                             cartridges, ensuring quality and sharp print desired, as well
                              as reducing printing costs thereby, effectively contributing to a reduction in 
                              printing budgets.
-                        </h5>
+                        </p>
                         <p>
                             Every year, OEM-Printing Machines, are replaced with new models, we offer an
                             alternative solution to both old and new printers. Our trusted Brand, has
