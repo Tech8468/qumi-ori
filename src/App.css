@@ -81,8 +81,8 @@ a {
 }
 
 .brand img {
-  width: 140px;
-  height: auto;
+  height: 42px;
+  width: auto;
 }
 
 .nav-links {
@@ -209,27 +209,46 @@ a {
   line-height: 1.55;
 }
 
-.logo-strip {
+.logo-marquee {
   margin-top: 1rem;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
-  gap: 0.8rem;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  background: #fff;
+  padding: 0.85rem 0;
+}
+
+.logo-track {
+  display: flex;
+  gap: 1rem;
+  width: max-content;
+  animation: logo-scroll 28s linear infinite;
 }
 
 .logo-item {
   border: 1px solid var(--line);
   background: #fff;
   border-radius: 10px;
-  min-height: 88px;
+  min-height: 120px;
+  min-width: 200px;
   display: grid;
   place-items: center;
-  padding: 0.6rem;
+  padding: 0.9rem;
 }
 
 .logo-item img {
-  max-width: 90px;
-  max-height: 42px;
+  max-width: 150px;
+  max-height: 72px;
   object-fit: contain;
+}
+
+@keyframes logo-scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-33.333%);
+  }
 }
 
 .about-layout,

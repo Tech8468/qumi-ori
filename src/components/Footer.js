@@ -34,9 +34,6 @@ function Footer() {
             <Link to="/" aria-label="Facebook">
               <FaFacebook />
             </Link>
-            <Link to="/" aria-label="LinkedIn">
-              <FaLinkedin />
-            </Link>
             <Link
               to="https://wa.me/2347066758468"
               target="_blank"

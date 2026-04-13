@@ -34,6 +34,7 @@ const features = [
 ];
 
 const clients = [Pix5, Pix6, Pix7, Pix8, Pix9];
+const marqueeClients = [...clients, ...clients, ...clients];
 
 function Home() {
   return (
@@ -71,6 +72,7 @@ function Home() {
               </article>
             ))}
           </div>
+        </section>
 
         <section className="section">
           <h2>Trusted by businesses</h2>
@@ -78,12 +80,14 @@ function Home() {
             We are proud to support these organizations with their print supply
             needs.
           </p>
-          <div className="logo-strip">
-            {clients.map((logo, index) => (
-              <div className="logo-item" key={`${logo}-${index}`}>
-                <img src={logo} alt="Client logo" />
-              </div>
-            ))}
+          <div className="logo-marquee">
+            <div className="logo-track">
+              {marqueeClients.map((logo, index) => (
+                <div className="logo-item" key={`${logo}-${index}`}>
+                  <img src={logo} alt="Client logo" />
+                </div>
+              ))}
+            </div>
           </div>
         </section>
 
