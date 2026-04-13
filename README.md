@@ -1,6 +1,6 @@
 # Qumi-Ori Website
 
-Marketing website for Qumi-Ori Resources, built with React + Vite.
+Marketing website for Qumi-Ori Resources, built with React.
 
 ## Tech Stack
 
