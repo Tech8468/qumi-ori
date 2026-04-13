@@ -5,10 +5,7 @@ Marketing website for Qumi-Ori Resources, built with React.
 ## Tech Stack
 
 - React 18
-- Vite
 - React Router DOM
-- React Icons
-- SweetAlert2
 
 ## Setup
 
