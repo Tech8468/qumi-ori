@@ -16,7 +16,7 @@ function Contact() {
 
     formData.append(
       "access_key",
-      process.env.REACT_APP_WEB3FORMS_ACCESS_KEY ||
+      import.meta.env.VITE_WEB3FORMS_ACCESS_KEY ||
         "0d8f3312-e712-4263-b738-2bb1059309a5"
     );
 
