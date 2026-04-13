@@ -1,13 +1,15 @@
 import Nav from "../Nav";
 import Footer from "../Footer";
-import Register from "../Contact";
+import Contact from "../Contact";
+
 function ContactPage() {
-    return (
-        <div className="backgroundImg">
-            <Nav />
-            <Register />
-            <Footer />
-        </div>
-    );
-};
+  return (
+    <div className="site-shell">
+      <Nav />
+      <Contact />
+      <Footer />
+    </div>
+  );
+}
+
 export default ContactPage;

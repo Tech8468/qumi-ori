@@ -1,53 +1,50 @@
-// import {Link} from "react-router-dom";
-// import Pix1 from "./img/qumi-logo.png";
-// import { useState } from "react";
-// import { useNavigate } from "react-router-dom";
-
-// import { useHistory } from "react-router-dom";
-
+import AboutImage from "./img/africa2.png";
 
 function About() {
-
-
-    return (
-        <div className="aboutWrapper ">
-            <div className="container">
-                <div className="col1">
-                    <div className="para1">
-                        <h1>
-                            What we do
-                        </h1>
-                        <p>
-                            We are a solutions company, providing Supplies, Distribution and Maintanance 
-                            solutions to organisation's printing challenges with quality toner 
-                            cartridges, ensuring quality and sharp print desired, as well
-                             as reducing printing costs thereby, effectively contributing to a reduction in 
-                             printing budgets.
-                        </p>
-                        <p>
-                            Every year, OEM-Printing Machines, are replaced with new models, we offer an
-                            alternative solution to both old and new printers. Our trusted Brand, has
-                            continued to come in all toner cartridge types to suit your printing needs.
-                        </p>
-                    </div>
-                    <div className="para2">
-                        <h1>Vision Statement</h1>
-                        <p>Qumi-Ori Resources, proactively taking steps to become that top brand providing quality printing solutions to printing challenges within Africa's business sector.</p>
-                    </div>
-                    <div className="para3">
-                        <h1>Brand Statement</h1>
-                        <p>Quality, Efficient, Timely and Competitive service delivery are reasons you will rather patronise Qumi-Ori Resources.</p>
-                    </div>
-                </div>
-                {/* <div className="col2">
-                    <div><img src={Pix1} alt="" /></div>
-                </div> */}
+  return (
+    <main className="page-main">
+      <div className="container">
+        <section className="section">
+          <h2>About Qumi-Ori Resources</h2>
+          <p className="section-intro">
+            We provide practical, cost-efficient printing solutions built for
+            businesses that value reliability.
+          </p>
+          <div className="about-layout">
+            <div className="text-stack">
+              <article className="card text-block">
+                <h3>What we do</h3>
+                <p>
+                  We supply and distribute toner cartridges and printer-related
+                  products for organizations looking to improve print quality
+                  while reducing total printing cost. Our support team also
+                  helps clients identify the right cartridge and maintenance
+                  needs for current and legacy printer models.
+                </p>
+              </article>
+              <article className="card text-block">
+                <h3>Vision statement</h3>
+                <p>
+                  To become a leading African brand for dependable printing
+                  solutions through consistent quality, operational efficiency,
+                  and trusted client relationships.
+                </p>
+              </article>
+              <article className="card text-block">
+                <h3>Brand promise</h3>
+                <p>
+                  Quality products, responsive support, and timely delivery at
+                  competitive pricing.
+                </p>
+              </article>
             </div>
-            {/* <div>
-                <Link to="/register">Register to Sign-up</Link>
-            </div> */}
-        </div>
-    )
-
+            <div className="card image-card">
+              <img src={AboutImage} alt="Qumi-Ori service coverage" />
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+  );
 }
 export default About;

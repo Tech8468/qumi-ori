@@ -1,57 +1,57 @@
 import { Link } from "react-router-dom";
 import Logo from "./img/qumi_logo_2.png";
-import { PiCopyright } from "react-icons/pi";
 import { FaFacebook, FaInstagram, FaLinkedin } from "react-icons/fa";
 import { PiWhatsappLogoLight } from "react-icons/pi";
 
-
 function Footer() {
+  const year = new Date().getFullYear();
   return (
-    <div className="footer">
-      <div className="footer-board">
-        <Link to="/">
-          <img src={Logo} alt="" />
-        </Link>
-        <div className="footer-link">
-          <ul>
-            <Link to="/about">
-              <li>About Us</li>
-            </Link>
-            <Link to="/product">
-              <li>Product</li>
-            </Link>
-            <Link to="/contact">
-              <li>Contact Us</li>
-            </Link>
-          </ul>
+    <footer className="site-footer">
+      <div className="container site-footer-inner">
+        <div className="footer-brand">
+          <Link to="/">
+            <img src={Logo} alt="Qumi-Ori" />
+          </Link>
+          <p>
+            Reliable toner and printer supply partner for businesses that value
+            quality output, responsive service, and timely delivery.
+          </p>
         </div>
-        <div className="footer-care">
-          <h2>Customer Care</h2>
-          <p>Email: qumiori.consumables@gmail.com</p>
-          <p>Phone: +234-901-6454-261</p>
-          <div className="footerSocial">
-            <Link to="/">
-              <FaInstagram className="instagram" />
+        <div className="footer-links">
+          <strong>Quick links</strong>
+          <Link to="/about">About</Link>
+          <Link to="/product">Products</Link>
+          <Link to="/contact">Contact</Link>
+        </div>
+        <div className="footer-contact">
+          <strong>Customer care</strong>
+          <span>qumiori.consumables@gmail.com</span>
+          <span>+234-901-6454-261</span>
+          <div className="footer-socials">
+            <Link to="/" aria-label="Instagram">
+              <FaInstagram />
             </Link>
-            <Link to="/">
-              <FaFacebook className="facebook" />
+            <Link to="/" aria-label="Facebook">
+              <FaFacebook />
             </Link>
-            <Link to="/">
-              <FaLinkedin className="linkedin" />
+            <Link to="/" aria-label="LinkedIn">
+              <FaLinkedin />
             </Link>
-            <Link to="https://wa.me/07066758468" target="_blank" rel="noopener noreferrer">
-              <PiWhatsappLogoLight className="whatsApp" />
+            <Link
+              to="https://wa.me/2347066758468"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="WhatsApp"
+            >
+              <PiWhatsappLogoLight />
             </Link>
           </div>
         </div>
       </div>
-      <div className="copyright">
-        <p>
-          <PiCopyright className="cpy" />
-          2025 Qumi-Ori Resources. All rights reserved.
-        </p>
+      <div className="footer-copy">
+        <p>{year} Qumi-Ori Resources. All rights reserved.</p>
       </div>
-    </div>
+    </footer>
   );
 }
 
