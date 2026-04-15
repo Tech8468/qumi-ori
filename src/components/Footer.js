@@ -1,7 +1,8 @@
 import { Link } from "react-router-dom";
 import Logo from "./img/qumi_logo_2.png";
-import { FaFacebook, FaInstagram, FaLinkedin } from "react-icons/fa";
+import { FaFacebook, FaInstagram } from "react-icons/fa";
 import { PiWhatsappLogoLight } from "react-icons/pi";
+import { WHATSAPP_URL } from "./siteConfig";
 
 function Footer() {
   const year = new Date().getFullYear();
@@ -34,14 +35,14 @@ function Footer() {
             <Link to="/" aria-label="Facebook">
               <FaFacebook />
             </Link>
-            <Link
-              to="https://wa.me/2347066758468"
+            <a
+              href={WHATSAPP_URL}
               target="_blank"
               rel="noopener noreferrer"
               aria-label="WhatsApp"
             >
               <PiWhatsappLogoLight />
-            </Link>
+            </a>
           </div>
         </div>
       </div>
