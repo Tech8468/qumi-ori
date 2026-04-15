@@ -9,6 +9,7 @@ import Pix6 from "./img/Interstyle.png";
 import Pix7 from "./img/Titan.jpg";
 import Pix8 from "./img/Raumplus.png";
 import Pix9 from "./img/TOFA.jpg";
+import HeroPrinter from "./img/Hp-printer.png";
 
 const features = [
   {
@@ -41,19 +42,25 @@ function Home() {
     <main className="page-main">
       <div className="container">
         <section className="hero">
-          <h1>Modern printing supplies for growing teams.</h1>
-          <p>
-            Qumi-Ori Resources helps businesses across industries maintain
-            consistent print performance with dependable toner cartridges,
-            printers, and responsive support.
-          </p>
-          <div className="hero-cta">
-            <Link to="/product" className="btn btn-primary">
-              Browse products
-            </Link>
-            <Link to="/contact" className="btn btn-ghost">
-              Request a quote
-            </Link>
+          <div className="hero-copy">
+            <span className="hero-kicker">Business print supply partner</span>
+            <h1>Modern printing supplies for growing teams.</h1>
+            <p>
+              Qumi-Ori Resources helps businesses across industries maintain
+              consistent print performance with dependable toner cartridges,
+              printers, and responsive support.
+            </p>
+            <div className="hero-cta">
+              <Link to="/product" className="btn btn-primary">
+                Browse products
+              </Link>
+              <Link to="/contact" className="btn btn-ghost">
+                Request a quote
+              </Link>
+            </div>
+          </div>
+          <div className="hero-media">
+            <img src={HeroPrinter} alt="HP laser printer" />
           </div>
         </section>
 
