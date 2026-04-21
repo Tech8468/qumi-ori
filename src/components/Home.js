@@ -9,7 +9,7 @@ import Pix6 from "./img/Interstyle.png";
 import Pix7 from "./img/Titan.jpg";
 import Pix8 from "./img/Raumplus.png";
 import Pix9 from "./img/TOFA.jpg";
-import HeroPrinter from "./img/Hp-printer.png";
+import HeroPrinter from "./img/backdrop3.png";
 
 const features = [
   {
