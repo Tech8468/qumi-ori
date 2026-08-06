@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import Logo from "./img/qumi_logo_2.png";
-import { FaFacebook, FaInstagram } from "react-icons/fa";
+import { FaFacebook, FaInstagram, FaLinkedin } from "react-icons/fa";
 import { PiWhatsappLogoLight } from "react-icons/pi";
 import { WHATSAPP_URL } from "./siteConfig";
 
@@ -26,14 +26,28 @@ function Footer() {
         </div>
         <div className="footer-contact">
           <strong>Customer care</strong>
-          <span>qumiori.consumables@gmail.com</span>
+          <a href="mailto:enquiry@qumioriresources.com">enquiry@qumioriresources.com</a>
           <span>+234-901-6454-261</span>
+          <span>12, Ladipo Kuku Street, Allen Avenue, Ikeja, Lagos</span>
           <div className="footer-socials">
+            <a
+              href="https://www.linkedin.com/company/qumi-ori-resources/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="LinkedIn"
+            >
+              <FaLinkedin />
+            </a>
+            <a
+              href="https://www.facebook.com/share/1Epf2hb3JH/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Facebook"
+            >
+              <FaFacebook />
+            </a>
             <Link to="/" aria-label="Instagram">
               <FaInstagram />
-            </Link>
-            <Link to="/" aria-label="Facebook">
-              <FaFacebook />
             </Link>
             <a
               href={WHATSAPP_URL}
