@@ -1,5 +1,7 @@
 import { useState } from "react";
 import Swal from "sweetalert2";
+import { FaFacebook, FaLinkedin } from "react-icons/fa";
+
 function Contact() {
   const [userData, setUserData] = useState({
     fName: "",
@@ -68,7 +70,9 @@ function Contact() {
             <div className="contact-details">
               <div className="contact-item">
                 <strong>Email</strong>
-                <span>qumiori.consumables@gmail.com</span>
+                <span>
+                  <a href="mailto:enquiry@qumioriresources.com">enquiry@qumioriresources.com</a>
+                </span>
               </div>
               <div className="contact-item">
                 <strong>Customer care line</strong>
@@ -76,11 +80,33 @@ function Contact() {
               </div>
               <div className="contact-item">
                 <strong>Office address</strong>
-                <span>25 Olayinka Street, Lagos</span>
+                <span>12, Ladipo Kuku Street, Allen Avenue, Ikeja, Lagos</span>
               </div>
               <div className="contact-item">
                 <strong>Business hours</strong>
                 <span>Monday - Friday, 8:00 AM to 5:00 PM</span>
+              </div>
+
+              <div className="contact-item">
+                <strong>Follow us</strong>
+                <div className="footer-socials">
+                  <a
+                    href="https://www.linkedin.com/company/qumi-ori-resources/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="LinkedIn"
+                  >
+                    <FaLinkedin />
+                  </a>
+                  <a
+                    href="https://www.facebook.com/share/1Epf2hb3JH/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Facebook"
+                  >
+                    <FaFacebook />
+                  </a>
+                </div>
               </div>
             </div>
 
