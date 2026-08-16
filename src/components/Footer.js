@@ -46,9 +46,6 @@ function Footer() {
             >
               <FaFacebook />
             </a>
-            <Link to="/" aria-label="Instagram">
-              <FaInstagram />
-            </Link>
             <a
               href={WHATSAPP_URL}
               target="_blank"
