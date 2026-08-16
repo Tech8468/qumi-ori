@@ -1,5 +1,3 @@
-import AboutImage from "./img/africa2.png";
-
 function About() {
   return (
     <main className="page-main">
@@ -11,7 +9,7 @@ function About() {
             businesses that value reliability.
           </p>
           <div className="about-layout">
-            <div className="text-stack">
+            <div className="text-stack full-width">
               <article className="card text-block">
                 <h3>What we do</h3>
                 <p>
@@ -37,9 +35,6 @@ function About() {
                   competitive pricing.
                 </p>
               </article>
-            </div>
-            <div className="card image-card">
-              <img src={AboutImage} alt="Qumi-Ori service coverage" />
             </div>
           </div>
         </section>
