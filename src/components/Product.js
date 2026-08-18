@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import Pix1 from "./img/toner1.jpg";
 import Pix2 from "./img/astaBrand.jpg";
-import Pix3 from "./img/tonerPr.jpg";
+import Pix3 from "./img/img.png";
 import Pix4 from "./img/Hp-printer.png";
 
 const products = [
