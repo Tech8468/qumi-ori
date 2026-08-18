@@ -9,7 +9,8 @@ import Pix6 from "./img/Interstyle.png";
 import Pix7 from "./img/Titan.jpg";
 import Pix8 from "./img/Raumplus.png";
 import Pix9 from "./img/TOFA.jpg";
-import HeroPrinter from "./img/backdrop3.png";
+import HeroPrinter from "./img/img.png";
+import HeroBg from "./img/bg.jpg";
 
 const features = [
   {
@@ -41,7 +42,14 @@ function Home() {
   return (
     <main className="page-main">
       <div className="container">
-        <section className="hero">
+        <section
+          className="hero"
+          style={{
+            backgroundImage: `url(${HeroBg})`,
+            backgroundSize: "cover",
+            backgroundPosition: "center",
+          }}
+        >
           <div className="hero-copy">
             <span className="hero-kicker">Business print supply partner</span>
             <h1>Modern printing supplies for growing teams.</h1>
